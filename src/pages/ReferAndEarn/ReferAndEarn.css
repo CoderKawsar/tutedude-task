@@ -1,0 +1,7 @@
+.guidelineIcon {
+  color: #800080;
+  background-color: -webkit-linear-gradient(#ff864c, #800080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
