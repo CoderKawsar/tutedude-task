@@ -1,18 +1,30 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ReferAndEarn from "./pages/ReferAndEarn/ReferAndEarn";
+import Layout from "./pages/Layout";
+import FriendsFerrered from "./pages/FriendsReffered/FriendsFerrered";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <React.StrictMode>
-        <App />
+        <Layout />
       </React.StrictMode>
     ),
+    children: [
+      {
+        path: "/",
+        element: <ReferAndEarn />,
+      },
+      {
+        path: "referred",
+        element: <FriendsFerrered />,
+      },
+    ],
   },
 ]);
 

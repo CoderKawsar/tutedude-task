@@ -1,27 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeaderImage from "../../assets/img/Tutedude.png";
+import HeaderImage from "../assets/img/Tutedude.png";
 
 function Header() {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-16">
       <h1 className="text-4xl">
         <Link to="/">
           <img src={HeaderImage} alt="Tute Dude" className="w-40" />
         </Link>
       </h1>
       <div className="flex py-6">
-        <Link className="text-[#800080] opacity-25 font-medium text-lg" to="/">
+        <Link
+          className="text-primary opacity-25 font-medium text-lg mr-7"
+          to="/referred"
+        >
+          Friends Reffered
+        </Link>
+        <Link className="text-primary opacity-25 font-medium text-lg" to="/">
           My Assignment
         </Link>
         <Link
-          className="text-[#800080] font-medium opacity-25 text-lg ml-7"
+          className="text-primary font-medium opacity-25 text-lg ml-7"
           to="/"
         >
           Chat with Mentor
         </Link>
         <Link
-          className="text-[#800080] font-medium text-lg ml-7 flex items-center"
+          className="text-primary font-medium text-lg ml-7 flex items-center"
           to="/"
         >
           <svg
@@ -30,7 +36,7 @@ function Header() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-5 h-5 bg-[#800080] rounded-full mr-1.5"
+            className="w-5 h-5 bg-primary rounded-full mr-1.5"
           >
             <path
               strokeLinecap="round"

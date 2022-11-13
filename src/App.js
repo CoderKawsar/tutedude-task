@@ -1,6 +1,6 @@
 import "./App.css";
-import Breadcrumb from "./components/Breadcrumb/Breadcrumb";
-import Header from "./components/Header/Header";
+import Breadcrumb from "./pages/Breadcrumb";
+import Header from "./pages/Header";
 
 function App() {
   return (

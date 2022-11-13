@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Breadcrumb() {
   return (
-    <div className="py-6 pl-44">
+    <div className="py-6 text-sm mb-8">
       <Link to="/" className="mr-1.5">
         UI/UX
       </Link>
